@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm:dev:*\"",
+    "dev": "concurrently \"yarn:dev:*\"",
     "dev:frontend": "vite --port 3000",
     "dev:backend": "cargo watch -C ../backend -x run",
     "build": "vue-tsc && vite build",
