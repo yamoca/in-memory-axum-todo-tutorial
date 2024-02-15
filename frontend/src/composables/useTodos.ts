@@ -46,7 +46,7 @@ export default function useTodos() {
 
     async function deleteTodo(todo: Todo) {
          const response = await fetch(endpoint(todo.id), {
-            method: 'DELETEA'
+            method: 'DELETE'
          });
          const json = await response.json();
          todos.value = json;
